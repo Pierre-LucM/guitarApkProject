@@ -11,13 +11,17 @@
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_first">
         <action
-            android:id="@+id/action_FirstFragment_to_searchBluetoothDevice"
-            app:destination="@id/searchBluetoothDevice" />
+            android:id="@+id/action_FirstFragment_to_returnHome"
+            app:destination="@id/returnHome" />
     </fragment>
-    <activity
-        android:id="@+id/searchBluetoothDevice"
-        android:name="com.example.guitarplayer.SearchBluetoothDevice"
-        android:label="activity_search_bluetooth_device"
-        tools:layout="@layout/activity_search_bluetooth_device" />
+    <fragment
+        android:id="@+id/returnHome"
+        android:name="com.example.guitarplayer.ReturnHome"
+        android:label="search_bluetooth_main"
+        tools:layout="@layout/search_bluetooth_main" >
+        <action
+            android:id="@+id/action_returnHome_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
 
 </navigation>
