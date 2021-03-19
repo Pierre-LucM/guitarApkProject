@@ -15,7 +15,7 @@
         android:textColor="@android:color/darker_gray"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/button_first"
+        app:layout_constraintBottom_toTopOf="@id/selectButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.575"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +23,7 @@
         tools:visibility="visible" />
 
     <Button
-        android:id="@+id/button_first"
+        android:id="@+id/selectButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/selectMusic"
@@ -51,7 +51,7 @@
         android:id="@+id/search_nearby_device"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="624dp"
+        android:layout_marginBottom="640dp"
         android:text="@string/search_arduino_device"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

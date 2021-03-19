@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_returnHome"
             app:destination="@id/returnHome" />
+        <action
+            android:id="@+id/action_FirstFragment_to_selectMusic2"
+            app:destination="@id/selectMusic2" />
     </fragment>
     <fragment
         android:id="@+id/returnHome"
@@ -21,6 +24,15 @@
         tools:layout="@layout/search_bluetooth_main" >
         <action
             android:id="@+id/action_returnHome_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectMusic2"
+        android:name="com.example.guitarplayer.SelectMusic"
+        android:label="select_music_fragment"
+        tools:layout="@layout/select_music_fragment" >
+        <action
+            android:id="@+id/action_selectMusic2_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
 

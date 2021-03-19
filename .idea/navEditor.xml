@@ -24,7 +24,7 @@
                                 <LayoutPositions />
                               </value>
                             </entry>
-                            <entry key="action_FirstFragment_to_searchBluetoothDevice">
+                            <entry key="action_FirstFragment_to_selectMusic2">
                               <value>
                                 <LayoutPositions />
                               </value>
@@ -39,13 +39,34 @@
                       <LayoutPositions>
                         <option name="myPosition">
                           <Point>
-                            <option name="x" value="-53" />
-                            <option name="y" value="372" />
+                            <option name="x" value="-127" />
+                            <option name="y" value="408" />
                           </Point>
                         </option>
                         <option name="myPositions">
                           <map>
                             <entry key="action_returnHome_to_FirstFragment">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="selectMusic2">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="-124" />
+                            <option name="y" value="104" />
+                          </Point>
+                        </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_selectMusic2_to_FirstFragment">
                               <value>
                                 <LayoutPositions />
                               </value>
