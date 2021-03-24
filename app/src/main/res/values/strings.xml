@@ -13,6 +13,11 @@
     <string name="return_button">Back</string>
     <string name="search_arduino_device">Search Arduino device</string>
     <string name="arduino_devices">Arduino Device</string>
+
+    <string name="importmusic">Import music from phone </string>
+    <string name="SDCARD">Import from arduino SD card</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="arduino_music">Music on arduino SD card</string>
+    <string name="returnArduinoButton">Back</string>
 </resources>

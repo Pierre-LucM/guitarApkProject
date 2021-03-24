@@ -34,6 +34,19 @@
         <action
             android:id="@+id/action_selectMusic2_to_FirstFragment"
             app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_selectMusic2_to_selectMusicArduino"
+            app:destination="@id/selectMusicArduino" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectMusicArduino"
+        android:name="com.example.guitarplayer.ArduinoSelectMusic"
+        android:label="fragment_select_music_arduino"
+        tools:layout="@layout/fragment_arduino_music" >
+
+        <action
+            android:id="@+id/action_selectMusicArduino_to_selectMusic2"
+            app:destination="@id/selectMusic2" />
     </fragment>
 
 </navigation>

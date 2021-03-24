@@ -1,5 +1,6 @@
 package com.example.guitarplayer;
 
+import android.net.wifi.rtt.WifiRttManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,7 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
-public class SelectMusic extends Fragment {
+public class ArduinoSelectMusic extends Fragment {
 
     @Override
     public View onCreateView(
@@ -17,26 +18,20 @@ public class SelectMusic extends Fragment {
             Bundle savedInstanceState
     ) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.select_music_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_arduino_music, container, false);
     }
 
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        view.findViewById(R.id.SelectButton).setOnClickListener(new View.OnClickListener() {
+        view.findViewById(R.id.returnArduinoButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                NavHostFragment.findNavController(SelectMusic.this)
-                        .navigate(R.id.action_selectMusic2_to_FirstFragment);
-            }
-        });
-        view.findViewById(R.id.importSD).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(SelectMusic.this)
-                        .navigate(R.id.action_selectMusic2_to_selectMusicArduino);
+                NavHostFragment.findNavController(ArduinoSelectMusic.this)
+                        .navigate(R.id.action_selectMusicArduino_to_selectMusic2);
             }
         });
     }
+
 
 }
